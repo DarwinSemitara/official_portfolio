@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="color-scheme" content="dark" />
+  <title>Semitara • Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <div class="bg-decor" aria-hidden="true" id="cursor-ripples">
+    <!-- Cursor ripples will be dynamically added here -->
+  </div>
+
+  <header class="topbar">
+    <div class="brand">Information Technology - 3D WAM</div>
+    <nav class="nav" aria-label="Primary">
+      <a class="nav-link" href="#about" data-target="about">About</a>
+      <a class="nav-link" href="#projects" data-target="projects">Projects</a>
+      <a class="nav-link" href="#contact" data-target="contact">Contact</a>
+    </nav>
+  </header>
+
+  <main class="vstack" id="vstack" tabindex="-1">
+    <!-- Section A: About -->
+    <section class="panel" id="about" aria-label="About me">
+      <div class="content">
+        <div class="card float intro-card">
+          <div class="intro-content">
+            <div class="intro-text">
+              <h1 class="title">Hi, I'm <span class="accent glowing-name" id="glowing-name">Darwin Jeff Semitara</span></h1>
+              <p class="subtitle">Frontend Developer • Backend Developer • Aspiring Web and Game Developer • Pixel Artist</p>
+              <p class="desc">I'm a developer passionate about turning ideas into interactive experiences—whether on the web or in games. I enjoy coding across languages and platforms, blending performance, accessibility, and design to create projects that are both functional and fun. From sleek user interfaces to immersive gameplay, I love building things that people enjoy using.</p>
+            </div>
+            <div class="avatar float" aria-label="Profile image">
+              <img src="images/pfp/portfolio_image.png" alt="Darwin Jeff Semitara" />
+            </div>
+          </div>
+        </div>
+
+        <div class="grid two deck-grid" id="about-deck">
+          <div class="card float deck-card" tabindex="0">
+            <h2>About</h2>
+            <ul class="list">
+              <li>21 yrs old, born on June 16, 2004</li>
+              <li>Currently living in Brgy. Tuntungin Putho Los Baños Laguna</li>
+              <li>Passionate about art</li>
+            </ul>
+          </div>
+          <div class="card float deck-card" tabindex="0">
+            <h2>Education</h2>
+            <ul class="list">
+              <li>Graduated from K-12 at LBSHS</li>
+              <li>Graduated highschool at TPINHS</li>
+              <li>Currently studying at LSPU - Sta Cruz Campus</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section B: Projects & Tech Stack -->
+    <section class="panel" id="projects" aria-label="Projects and tech stack">
+      <div class="content">
+        <div class="card float">
+          <h2>Projects</h2>
+          <div class="projects-carousel">
+            <button class="carousel-btn prev" aria-label="Previous projects">&#10094;</button>
+            <div class="projects-window">
+              <div class="projects-track">
+                <article class="project-card float" data-title="RAD" data-desc="An ecommerce platform developed to properly simulate the customer, seller and admin interaction and explore how an ecommerce website functions" data-images="images/projects/rad/rad1.png,images/projects/rad/rad2.png,images/projects/rad/rad3.png">
+                  <div class="project-thumb" aria-label="RAD project thumbnail"></div>
+                  <div class="project-actions"><span class="project-title">RAD</span><button class="btn view-btn" type="button">View</button></div>
+                </article>
+                <article class="project-card float" data-title="TPINHS" data-desc="A student enrollment and management platform designed to handle student registration, enrollment and other student-teacher-management affairs." data-images="images/projects/tpinhs/tpinhs1.jpg,images/projects/tpinhs/tpinhs2.jpg,images/projects/tpinhs/tpinhs3.jpg">
+                  <div class="project-thumb" aria-label="TPINHS project thumbnail"></div>
+                  <div class="project-actions"><span class="project-title">TPINHS</span><button class="btn view-btn" type="button">View</button></div>
+                </article>
+                <article class="project-card float" data-title="Verdant" data-desc="Another ecommerce platform specifically built to cater home and garden equipments, supplies and all kinds of stuff, this is to further the knowledge of the developer about how ecommerce works." data-images="images/projects/verdant/verdant1.jpg,images/projects/verdant/verdant2.jpg,images/projects/verdant/verdant3.jpg">
+                  <div class="project-thumb" aria-label="Verdant project thumbnail"></div>
+                  <div class="project-actions"><span class="project-title">Verdant</span><button class="btn view-btn" type="button">View</button></div>
+                </article>
+              </div>
+            </div>
+            <button class="carousel-btn next" aria-label="Next projects">&#10095;</button>
+          </div>
+        </div>
+
+        <div class="card float">
+          <h2>Tech Stack</h2>
+          <ul class="chips">
+            <li class="chip float">HTML5</li>
+            <li class="chip float">CSS3</li>
+            <li class="chip float">Python</li>
+            <li class="chip float">JavaScript</li>
+            <li class="chip float">Java</li>
+            <li class="chip float">SQL</li>
+            <li class="chip float">Node.js</li>
+            <li class="chip float">C#</li>
+            <li class="chip float">C++</li>
+            <li class="chip float">Php</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section C: Socials & Contact -->
+    <section class="panel" id="contact" aria-label="Socials and contact form">
+      <div class="content">
+        <div class="card float">
+          <h2>Socials</h2>
+          <ul class="socials">
+            <li><a class="s-github" aria-label="GitHub" href="https://github.com/DarwinSemitara" target="_blank" rel="noopener"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/github.svg" alt="GitHub" /></a></li>
+            <li><a class="s-facebook" aria-label="Facebook" href="https://www.facebook.com/darwinjeff.semitaraii.5" target="_blank" rel="noopener"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/facebook.svg" alt="Facebook" /></a></li>
+            <li><a class="s-instagram" aria-label="Instagram" href="https://www.instagram.com/d.rwnnn/?hl=en" target="_blank" rel="noopener"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/instagram.svg" alt="Instagram" /></a></li>
+            <li><a class="s-gmail" aria-label="Gmail" href="https://mail.google.com/mail/?view=cm&fs=1&to=darwinjeffsemtiara@gmail.com" target="_blank" rel="noopener"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/gmail.svg" alt="Gmail" /></a></li>
+            <li><a class="s-discord" aria-label="Discord" href="https://discord.com/users/1144583126945906809" target="_blank" rel="noopener"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/discord.svg" alt="Discord" /></a></li>
+          </ul>
+        </div>
+
+        <div class="card float">
+          <h2>Message Me</h2>
+          <form id="contact-form" novalidate>
+            <div class="field">
+              <label for="name">Name</label>
+              <input id="name" name="name" type="text" required placeholder="Your name" />
+            </div>
+            <div class="field">
+              <label for="email">Email</label>
+              <input id="email" name="email" type="email" required placeholder="you@example.com" />
+            </div>
+            <div class="field">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" required placeholder="Say hello..."></textarea>
+            </div>
+            <div class="actions">
+              <button class="btn" type="submit">Send</button>
+              <span id="form-status" role="status" aria-live="polite"></span>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <small>© <span id="year"></span> Darwin Jeff Semitara. All rights reserved.</small>
+  </footer>
+
+  <!-- Project Modal -->
+  <div class="modal" id="project-modal" aria-hidden="true" role="dialog" aria-modal="true">
+    <div class="modal-backdrop" data-close="true"></div>
+    <div class="modal-dialog" role="document">
+      <div class="modal-header">
+        <h3 class="modal-title" id="modal-title">Project</h3>
+        <button class="modal-close" aria-label="Close" data-close="true">&#10005;</button>
+      </div>
+      <div class="modal-body">
+        <div class="modal-gallery">
+          <button class="gbtn prev" aria-label="Previous image">&#10094;</button>
+          <img id="modal-image" alt="Project image" />
+          <button class="gbtn next" aria-label="Next image">&#10095;</button>
+        </div>
+        <p class="modal-desc" id="modal-desc"></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Fullscreen Image Overlay -->
+  <div class="fullscreen-overlay" id="fullscreen-overlay" aria-hidden="true">
+    <img id="fullscreen-image" alt="Fullscreen image" />
+    <button class="fullscreen-close" aria-label="Close fullscreen" id="fullscreen-close">&#10005;</button>
+  </div>
+
+  <script src="./script.js"></script>
+</body>
+</html>
